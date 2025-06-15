@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Map</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .search-bar {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    .map-wrapper {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .map-heading {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .map-subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #dcdcdc;
+    }
+
+    .map-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 450px;
+      border: none;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .map-frame {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">HOPE HAVEN</div>
+        <nav>
+          <a href="hopehaven.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="login.html">LOGIN</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="features.html">FEATURES</a>
+        </nav>
+      </header>
+
+  <section class="map-wrapper">
+    <h2 class="map-heading">Find Donation Points Near You</h2>
+    <p class="map-subtitle">Discover orphanages and donation centers in your area that need your help.</p>
+
+    <div class="map-container">
+      <!-- Placeholder Map Image (You can replace with an actual embed if needed) -->
+      <img src="map.png" alt="Map" class="map-frame" />
+    </div>
+  </section>
+
+</body>
+</html>

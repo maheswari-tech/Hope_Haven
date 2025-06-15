@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .search-bar {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    .testimonial-section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .testimonial-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+      color: #dcdcdc;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .testimonial-card {
+      background-color: #f9fafb;
+      color: #1f2937;
+      border-radius: 12px;
+      padding: 30px 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .testimonial-icon {
+      font-size: 28px;
+      color: #15803d;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-text {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #d1d5db;
+    }
+
+    .testimonial-name {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .testimonial-role {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">HOPE HAVEN</div>
+        <nav>
+          <a href="hopehaven.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="login.html">LOGIN</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="features.html">FEATURES</a>
+        </nav>
+      </header>
+
+  <section class="testimonial-section">
+    <h2 class="testimonial-title">What Our Community Says</h2>
+    <p class="testimonial-subtitle">Hear from donors, orphanages, and volunteers who are part of our mission.</p>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <div class="testimonial-icon">❝</div>
+        <p class="testimonial-text">"FoodShare has made it incredibly easy for our restaurant to donate excess food. Instead of throwing away perfectly good meals, we're now helping feed children in need."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <div class="testimonial-name">Michael Thompson</div>
+            <div class="testimonial-role">Restaurant Owner</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-icon">❝</div>
+        <p class="testimonial-text">"As an orphanage director, I've seen firsthand how FoodShare has improved the quality and variety of meals we can offer our children. The platform is a true blessing."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <div class="testimonial-name">Sarah Johnson</div>
+            <div class="testimonial-role">Orphanage Director</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-icon">❝</div>
+        <p class="testimonial-text">"Volunteering with FoodShare has been incredibly rewarding. I get to connect with my community while making a tangible difference in children's lives."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <div class="testimonial-name">David Rodriguez</div>
+            <div class="testimonial-role">Volunteer</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

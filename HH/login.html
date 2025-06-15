@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+    }
+    nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff6f5e;
+  color: white;
+  border-radius: 5px;
+}
+
+nav a.active {
+  background-color: #ff6f5e;
+  color: white;
+  border-radius: 5px;
+}
+
+
+    .search-bar {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: white;
+    }
+
+   
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .modal {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 400px;
+      color: black;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+
+    .tabs button {
+      flex: 1;
+      padding: 10px;
+      background: #eee;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .tabs button.active {
+      background-color: #2d7a35;
+      color: white;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      background-color: #2d7a35;
+      color: white;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .signup {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .signup a {
+      color: #2d7a35;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">HOPE HAVEN</div>
+    <nav>
+      <a href="hopehaven.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="login.html">LOGIN</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="features.html">FEATURES</a>
+    </nav>
+  </header>
+  <script>
+    const currentPath = window.location.pathname.split("/").pop() || "hopehaven.html";
+    const navLinks = document.querySelectorAll("nav a");
+  
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href");
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  </script>
+  
+  <div class="container">
+    <div class="modal">
+      <h2>Login</h2>
+      <div class="tabs">
+        <button class="tab-button active" onclick="switchTab('user')">Donar</button>
+        <button class="tab-button" onclick="switchTab('orphanage')">Orphanage</button>
+        <button class="tab-button" onclick="switchTab('volunteer')">Volunteer</button>
+      </div>
+
+      <form id="user" class="tab-content">
+        <div class="form-group">
+          <input type="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Your password" required>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+
+      <form id="orphanage" class="tab-content" style="display: none;">
+        <div class="form-group">
+          <input type="email" placeholder="Orphanage email" required>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Orphanage password" required>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn">Login as Orphanage</button>
+      </form>
+
+      <form id="volunteer" class="tab-content" style="display: none;">
+        <div class="form-group">
+          <input type="email" placeholder="Volunteer email" required>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Volunteer password" required>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn">Login as Volunteer</button>
+      </form>
+
+      <div class="signup">
+        Don't have an account? <a href="#">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchTab(role) {
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(form => form.style.display = 'none');
+      document.querySelector(`.tab-button[onclick="switchTab('${role}')"]`).classList.add('active');
+      document.getElementById(role).style.display = 'block';
+    }
+  </script>
+  <script>
+    
+  
+    // Orphanage Login Redirect
+    document.getElementById("orphanage").addEventListener("submit", function (e) {
+      e.preventDefault();
+      window.location.href = "orphanage.html"; // orphanage goes to dashboard
+    });
+  
+    // Volunteer Login Redirect
+    document.getElementById("volunteer").addEventListener("submit", function (e) {
+      e.preventDefault();
+      window.location.href = "volunteer.html"; // volunteer goes to their page
+    });
+  </script>
+
+</body>
+</html>

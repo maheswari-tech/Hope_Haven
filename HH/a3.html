@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Impact</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .search-bar {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    .stats-wrapper {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .stats-wrapper h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .stats-wrapper p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 60px auto;
+    }
+
+    .data-visuals {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .insight-box {
+      background-color: white;
+      color: black;
+      width: 400px;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .insight-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .insight-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .insight-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .insight-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">HOPE HAVEN</div>
+        <nav>
+          <a href="hopehaven.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="login.html">LOGIN</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="features.html">FEATURES</a>
+        </nav>
+      </header>
+
+  <section class="stats-wrapper">
+    <h2>Our Impact</h2>
+    <p>See how our community is making a difference in reducing food waste and helping those in need.</p>
+
+    <div class="data-visuals">
+      <div class="insight-box">
+        <h3>Food Donations by Source</h3>
+        <img src="Impact1.png" alt="Pie Chart">
+      </div>
+      <div class="insight-box">
+        <h3>Monthly Impact</h3>
+        <img src="Impact2.png" alt="Area Chart">
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

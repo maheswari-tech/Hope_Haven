@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+    }
+    nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff6f5e;
+  color: white;
+  border-radius: 5px;
+}
+
+nav a.active {
+  background-color: #ff6f5e;
+  color: white;
+  border-radius: 5px;
+}
+
+
+    .search-bar {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: white;
+    }
+
+    
+    .contact-wrapper {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .contact-subtitle {
+      font-size: 1.1rem;
+      color: #dcdcdc;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .form-panel, .info-panel {
+      background-color: #f9fafb;
+      color: #1f2937;
+      border-radius: 12px;
+      padding: 30px;
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .form-panel form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-label {
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .form-input, .form-textarea {
+      padding: 12px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #fff;
+    }
+
+    .form-textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    .form-button {
+      background-color: #2e7d32;
+      color: white;
+      font-weight: bold;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .form-button:hover {
+      background-color: #256429;
+    }
+
+    .info-panel h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      color: #1f2937;
+    }
+
+    .info-icon {
+      font-size: 1.2rem;
+      color: #15803d;
+    }
+
+    .social-section {
+      margin-top: 30px;
+    }
+
+    .social-title {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      background-color: #e5e7eb;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #374151;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .social-icon:hover {
+      background-color: #d1d5db;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">HOPE HAVEN</div>
+    <nav>
+      <a href="hopehaven.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="login.html">LOGIN</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="features.html">FEATURES</a>
+    </nav>
+  </header>
+  <script>
+    const currentPath = window.location.pathname.split("/").pop() || "hopehaven.html";
+    const navLinks = document.querySelectorAll("nav a");
+  
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href");
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  </script>
+  
+  
+  <section class="contact-wrapper">
+    <div class="contact-header">
+      <h2 class="contact-title">Contact Us</h2>
+      <p class="contact-subtitle">Have questions or want to get involved? Reach out to our team.</p>
+    </div>
+
+    <div class="contact-container">
+
+      <!-- Contact Form -->
+      <div class="form-panel">
+        <form>
+          <div>
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-input" placeholder="Your name">
+          </div>
+          <div>
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="Your email">
+          </div>
+          <div>
+            <label class="form-label">Subject</label>
+            <input type="text" class="form-input" placeholder="Subject">
+          </div>
+          <div>
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="form-button">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="info-panel">
+        <h3>Contact Information</h3>
+        <div class="info-item"><span class="info-icon">📍</span>123 Food Share Avenue, Cityville, ST 12345</div>
+        <div class="info-item"><span class="info-icon">📞</span>(555) 123-4567</div>
+        <div class="info-item"><span class="info-icon">✉️</span>info@foodshare.org</div>
+        <div class="info-item"><span class="info-icon">🕒</span>Mon - Fri: 9AM - 5PM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sat: 10AM - 2PM</div>
+
+        <div class="social-section">
+          <div class="social-title">Connect With Us</div>
+          <div class="social-icons" style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <img src="facebook.png" alt="Facebook" style="width: 20px; height: 20px;">
+            </a>
+            <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <img src="twitter.png" alt="Twitter" style="width: 20px; height: 20px;">
+            </a>
+            <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <img src="instagram.jpeg" alt="Instagram" style="width: 20px; height: 20px;">
+            </a>
+            <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <img src="linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+            </a>
+          </div>
+
+    </div>
+  </section>
+
+  <footer class="footer-section" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #fff; padding: 4rem 2rem;">
+    <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+      
+      <!-- Brand Info -->
+      <div class="footer-brand" style="flex: 1 1 200px;">
+        <h2 style="font-family: 'Pacifico', cursive; font-size: 1.8rem;">HOPE HAVEN</h2>
+        <p style="margin: 1rem 0;">Connecting excess food with those who need it most since 2022.</p>
+        <div class="social-links" style="display: flex; gap: 1rem; margin-top: 1rem;">
+          <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <img src="facebook.png" alt="Facebook" style="width: 20px; height: 20px;">
+          </a>
+          <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <img src="twitter.png" alt="Twitter" style="width: 20px; height: 20px;">
+          </a>
+          <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <img src="instagram.jpeg" alt="Instagram" style="width: 20px; height: 20px;">
+          </a>
+          <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <img src="linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+          </a>
+        </div>
+        
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-links" style="flex: 1 1 150px;">
+        <h4 style="margin-bottom: 1rem; font-weight: bold;">Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="hopehaven.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+          <li><a href="about.html" style="color: #ccc; text-decoration: none;">About Us</a></li>
+          <li><a href="login.html" style="color: #ccc; text-decoration: none;">Login</a></li>
+          <li><a href="contact.html" style="color: #ccc; text-decoration: none;">Contact</a></li>
+          <li><a href="features.html" style="color: #ccc; text-decoration: none;">Features</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-contact" style="flex: 1 1 200px;">
+        <h4 style="margin-bottom: 1rem; font-weight: bold;">Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Hunger City, FC 10001</p>
+        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+        <p><i class="fas fa-envelope"></i> info@hopehaven.org</p>
+      </div>
+  
+      <!-- Newsletter -->
+      <div class="footer-newsletter" style="flex: 1 1 250px;">
+        <h4 style="margin-bottom: 1rem; font-weight: bold;">Newsletter</h4>
+        <p>Subscribe to our newsletter for updates on our impact and opportunities.</p>
+        <div style="margin-top: 1rem;">
+          <input type="email" placeholder="Your email" style="padding: 0.6rem; width: 60%; border: none; border-radius: 4px 0 0 4px;">
+          <button style="padding: 0.6rem 1rem; background: #ff6a3d; color: white; border: none; border-radius: 0 4px 4px 0;">Subscribe</button>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem; padding-top: 1rem; text-align: center; color: #ccc;">
+      © 2025 HopeHaven. All rights reserved.
+    </div>
+  </footer>
+  
+
+ 
+
+  
+
+</body>
+</html>

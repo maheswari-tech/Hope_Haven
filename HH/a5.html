@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recent Donations</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .search-bar {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    .donation-feed {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .donation-feed h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .donation-feed p {
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+      color: #d0d0d0;
+    }
+
+    .donation-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .donation-box {
+      background: white;
+      color: #111;
+      padding: 20px;
+      width: 320px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .donation-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .donor-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .donor-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #e8f5e9;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-right: 12px;
+    }
+
+    .donor-name {
+      font-weight: 600;
+    }
+
+    .donation-time {
+      font-size: 0.9rem;
+      color: gray;
+    }
+
+    .donation-desc {
+      margin: 12px 0;
+    }
+
+    .donation-location {
+      font-size: 0.9rem;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .view-more-btn {
+      margin-top: 40px;
+    }
+
+    .view-more-btn button {
+      background: transparent;
+      color: #4caf50;
+      border: 2px solid #4caf50;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .view-more-btn button:hover {
+      background: #4caf50;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .donation-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">HOPE HAVEN</div>
+        <nav>
+          <a href="hopehaven.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="login.html">LOGIN</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="features.html">FEATURES</a>
+        </nav>
+      </header>
+
+  <section class="donation-feed">
+    <h2>Recent Donations</h2>
+    <p>See the recent contributions from our generous community members.</p>
+
+    <div class="donation-grid">
+      <div class="donation-box">
+        <div class="donor-info">
+          <div class="donor-icon">🍽️</div>
+          <div>
+            <div class="donor-name">Riverside Catering</div>
+            <div class="donation-time">2 hours ago</div>
+          </div>
+        </div>
+        <div class="donation-desc">
+          Donated 25 meals from a corporate event to Hope Children's Home.
+        </div>
+        <div class="donation-location">📍 Downtown, 2.3 miles away</div>
+      </div>
+
+      <div class="donation-box">
+        <div class="donor-info">
+          <div class="donor-icon">🏨</div>
+          <div>
+            <div class="donor-name">Grand Plaza Hotel</div>
+            <div class="donation-time">5 hours ago</div>
+          </div>
+        </div>
+        <div class="donation-desc">
+          Donated 40 meals from a wedding reception to Sunshine Orphanage.
+        </div>
+        <div class="donation-location">📍 Westside, 4.1 miles away</div>
+      </div>
+
+      <div class="donation-box">
+        <div class="donor-info">
+          <div class="donor-icon">🛒</div>
+          <div>
+            <div class="donor-name">Fresh Market Grocery</div>
+            <div class="donation-time">Yesterday</div>
+          </div>
+        </div>
+        <div class="donation-desc">
+          Donated 15 boxes of fresh produce to Little Angels Home.
+        </div>
+        <div class="donation-location">📍 Northside, 1.8 miles away</div>
+      </div>
+    </div>
+
+    <div class="view-more-btn">
+      <button>View All Donations</button>
+    </div>
+  </section>
+
+</body>
+</html>
