@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision and Mission</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+    }
+    nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff6f5e;
+  color: white;
+  border-radius: 5px;
+}
+
+nav a.active {
+  background-color: #ff6f5e;
+  color: white;
+  border-radius: 5px;
+}
+
+    .search-bar {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: white;
+    }
+
+    
+
+    /*Vision,Mission*/
+    .info-section {
+  padding: 60px 40px;
+  text-align: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.info-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.info-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info-card {
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+}
+
+.info-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.info-content h2 {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  color: #ffcc00;
+}
+
+.info-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .info-card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+    /* How It Works Section */
+.how-it-works {
+      background: transparent;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .how-it-works h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .how-it-works .description {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      color: #e0e0e0;
+    }
+
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .step-card {
+      background-color: white;
+      color: #1a1a1a;
+      padding: 30px 20px;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .icon-circle {
+      background-color: #ffe5dd;
+      color: #ff6f5e;
+      font-size: 24px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 15px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .step-card p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    /*Our Impact*/
+    .stats-wrapper {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .stats-wrapper h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .stats-wrapper p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 60px auto;
+    }
+
+    .data-visuals {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .insight-box {
+      background-color: white;
+      color: black;
+      width: 400px;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .insight-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .insight-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .insight-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .insight-box {
+        width: 90%;
+      }
+    }
+
+    /*Where your food come from*/
+    .donation-section {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      padding: 60px 20px;
+      color: white;
+    }
+
+    .donation-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .source-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .source-box {
+      background: white;
+      color: black;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 260px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .source-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .source-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .source-text {
+      padding: 20px;
+    }
+
+    .source-text h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    /*Recent Donations*/
+    .donation-feed {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .donation-feed h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .donation-feed p {
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+      color: #d0d0d0;
+    }
+
+    .donation-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .donation-box {
+      background: white;
+      color: #111;
+      padding: 20px;
+      width: 320px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .donation-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .donor-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .donor-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #e8f5e9;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-right: 12px;
+    }
+
+    .donor-name {
+      font-weight: 600;
+    }
+
+    .donation-time {
+      font-size: 0.9rem;
+      color: gray;
+    }
+
+    .donation-desc {
+      margin: 12px 0;
+    }
+
+    .donation-location {
+      font-size: 0.9rem;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .view-more-btn {
+      margin-top: 40px;
+    }
+
+    .view-more-btn button {
+      background: transparent;
+      color: #4caf50;
+      border: 2px solid #4caf50;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .view-more-btn button:hover {
+      background: #4caf50;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .donation-box {
+        width: 90%;
+      }
+    }
+    /*Map*/
+    .map-wrapper {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .map-heading {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .map-subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #dcdcdc;
+    }
+
+    .map-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 450px;
+      border: none;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .map-frame {
+        height: 300px;
+      }
+    }
+    /*What our community says*/
+    .testimonial-section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .testimonial-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+      color: #dcdcdc;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .testimonial-card {
+      background-color: #f9fafb;
+      color: #1f2937;
+      border-radius: 12px;
+      padding: 30px 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .testimonial-icon {
+      font-size: 28px;
+      color: #15803d;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-text {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #d1d5db;
+    }
+
+    .testimonial-name {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .testimonial-role {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="logo">HOPE HAVEN</div>
+    <nav>
+      <a href="hopehaven.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="login.html">LOGIN</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="features.html">FEATURES</a>
+    </nav>
+  </header>
+  <script>
+    const currentPath = window.location.pathname.split("/").pop() || "hopehaven.html";
+    const navLinks = document.querySelectorAll("nav a");
+  
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href");
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  </script>
+  
+  
+
+  <div class="info-section">
+    <h1 class="info-title">Vision and Mission</h1>
+    <div class="info-card-wrapper">
+      <div class="info-card">
+        <img src="vision.jpg" alt="Vision Image" />
+        <div class="info-content">
+          <h2>VISION</h2>
+          <p>To create a hunger-free world where every surplus meal finds its way to a child in need, starting with orphanages in our local communities.</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <img src="mission.jpg" alt="Mission Image" />
+        <div class="info-content">
+          <h2>MISSION</h2>
+          <p>We use tech to match surplus food with orphanages, empower giving, raise awareness, and ensure no meal is wasted.</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <img src="values.jpg" alt="Values Image" />
+        <div class="info-content">
+          <h2>VALUES</h2>
+          <p>We believe every human deserves dignity, care, and a warm meal. Our work starts with empathy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <p class="description">
+      Our simple process makes food donation easy and efficient, ensuring your excess food reaches those who need it most.
+    </p>
+    <div class="steps">
+      <div class="step-card step-register">
+        <div class="icon-circle">👤➕</div>
+        <h3>Register Your Donation</h3>
+        <p>Sign up and let us know you have food to donate. It only takes a minute to get started.</p>
+      </div>
+      <div class="step-card step-location">
+        <div class="icon-circle">📍</div>
+        <h3>Share Location & Details</h3>
+        <p>Tell us where you are and what food you have available for donation.</p>
+      </div>
+      <div class="step-card step-ai">
+        <div class="icon-circle">💡</div>
+        <h3>AI Chatbot</h3>
+        <p>Use our AI-powered chatbot to quickly locate orphanages near you. Just type your location and get instant recommendations.</p>
+      </div>
+      <div class="step-card step-pickup">
+        <div class="icon-circle">🚚</div>
+        <h3>We Handle Pickup</h3>
+        <p>Our volunteers will coordinate pickup at your convenience, making it hassle-free.</p>
+      </div>
+      <div class="step-card step-delivery">
+        <div class="icon-circle">❤️</div>
+        <h3>Food Reaches Those in Need</h3>
+        <p>Your donation is delivered to local orphanages and communities who need it most.</p>
+      </div>
+    </div>
+  </section>
+  <!--Our Impact-->
+  <section class="stats-wrapper">
+    <h2>Our Impact</h2>
+    <p>See how our community is making a difference in reducing food waste and helping those in need.</p>
+
+    <div class="data-visuals">
+      <div class="insight-box">
+        <h3>Food Donations by Source</h3>
+        <img src="Impact1.png" alt="Pie Chart">
+      </div>
+      <div class="insight-box">
+        <h3>Monthly Impact</h3>
+        <img src="Impact2.png" alt="Area Chart">
+      </div>
+    </div>
+  </section>
+
+  <!--Where your food come from-->
+  <section class="donation-section">
+    <div class="donation-wrapper">
+      <h2>Where Your Food Can Come From</h2>
+      <p>We accept food donations from various sources to ensure no excess food goes to waste.</p>
+      
+      <div class="source-grid">
+        <div class="source-box">
+          <img src="food1.png" alt="Weddings & Events" />
+          <div class="source-text">
+            <h3>Weddings & Events</h3>
+            <p>Donate surplus food from your special occasions and celebrations.</p>
+          </div>
+        </div>
+        <div class="source-box">
+          <img src="food2.png" alt="Restaurants & Hotels" />
+          <div class="source-text">
+            <h3>Restaurants & Hotels</h3>
+            <p>Partner with us to donate unused prepared meals and ingredients.</p>
+          </div>
+        </div>
+        <div class="source-box">
+          <img src="food3.png" alt="Corporate Cafeterias" />
+          <div class="source-text">
+            <h3>Corporate Cafeterias</h3>
+            <p>Turn your office's excess catering and daily meals into donations.</p>
+          </div>
+        </div>
+        <div class="source-box">
+          <img src="food4.png" alt="Home Kitchens" />
+          <div class="source-text">
+            <h3>Home Kitchens</h3>
+            <p>Share your homemade meals and grocery extras with those in need.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Recent Donations-->
+  <section class="donation-feed">
+    <h2>Recent Donations</h2>
+    <p>See the recent contributions from our generous community members.</p>
+
+    <div class="donation-grid">
+      <div class="donation-box">
+        <div class="donor-info">
+          <div class="donor-icon">🍽️</div>
+          <div>
+            <div class="donor-name">Riverside Catering</div>
+            <div class="donation-time">2 hours ago</div>
+          </div>
+        </div>
+        <div class="donation-desc">
+          Donated 25 meals from a corporate event to Hope Children's Home.
+        </div>
+        <div class="donation-location">📍 Downtown, 2.3 miles away</div>
+      </div>
+
+      <div class="donation-box">
+        <div class="donor-info">
+          <div class="donor-icon">🏨</div>
+          <div>
+            <div class="donor-name">Grand Plaza Hotel</div>
+            <div class="donation-time">5 hours ago</div>
+          </div>
+        </div>
+        <div class="donation-desc">
+          Donated 40 meals from a wedding reception to Sunshine Orphanage.
+        </div>
+        <div class="donation-location">📍 Westside, 4.1 miles away</div>
+      </div>
+
+      <div class="donation-box">
+        <div class="donor-info">
+          <div class="donor-icon">🛒</div>
+          <div>
+            <div class="donor-name">Fresh Market Grocery</div>
+            <div class="donation-time">Yesterday</div>
+          </div>
+        </div>
+        <div class="donation-desc">
+          Donated 15 boxes of fresh produce to Little Angels Home.
+        </div>
+        <div class="donation-location">📍 Northside, 1.8 miles away</div>
+      </div>
+    </div>
+
+    <div class="view-more-btn">
+      <button>View All Donations</button>
+    </div>
+  </section>
+
+  <!--Map-->
+  <section class="map-wrapper">
+    <h2 class="map-heading">Find Donation Points Near You</h2>
+    <p class="map-subtitle">Discover orphanages and donation centers in your area that need your help.</p>
+
+    <div class="map-container">
+      <!-- Placeholder Map Image (You can replace with an actual embed if needed) -->
+      <img src="map.png" alt="Map" class="map-frame" />
+    </div>
+  </section>
+
+  <!--What our community says-->
+  
+  <section class="testimonial-section">
+    <h2 class="testimonial-title">What Our Community Says</h2>
+    <p class="testimonial-subtitle">Hear from donors, orphanages, and volunteers who are part of our mission.</p>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <div class="testimonial-icon">❝</div>
+        <p class="testimonial-text">"FoodShare has made it incredibly easy for our restaurant to donate excess food. Instead of throwing away perfectly good meals, we're now helping feed children in need."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <div class="testimonial-name">Michael Thompson</div>
+            <div class="testimonial-role">Restaurant Owner</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-icon">❝</div>
+        <p class="testimonial-text">"As an orphanage director, I've seen firsthand how FoodShare has improved the quality and variety of meals we can offer our children. The platform is a true blessing."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <div class="testimonial-name">Sarah Johnson</div>
+            <div class="testimonial-role">Orphanage Director</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-icon">❝</div>
+        <p class="testimonial-text">"Volunteering with FoodShare has been incredibly rewarding. I get to connect with my community while making a tangible difference in children's lives."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"></div>
+          <div>
+            <div class="testimonial-name">David Rodriguez</div>
+            <div class="testimonial-role">Volunteer</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer class="footer-section" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #fff; padding: 4rem 2rem;">
+    <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+      
+      <!-- Brand Info -->
+      <div class="footer-brand" style="flex: 1 1 200px;">
+        <h2 style="font-family: 'Pacifico', cursive; font-size: 1.8rem;">HOPE HAVEN</h2>
+        <p style="margin: 1rem 0;">Connecting excess food with those who need it most since 2022.</p>
+        <div class="social-links" style="display: flex; gap: 1rem; margin-top: 1rem;">
+          <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <img src="facebook.png" alt="Facebook" style="width: 20px; height: 20px;">
+          </a>
+          <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <img src="twitter.png" alt="Twitter" style="width: 20px; height: 20px;">
+          </a>
+          <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <img src="instagram.jpeg" alt="Instagram" style="width: 20px; height: 20px;">
+          </a>
+          <a href="#" class="social-icon" style="background: #1e1e2f; padding: 0.6rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <img src="linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+          </a>
+        </div>
+        
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-links" style="flex: 1 1 150px;">
+        <h4 style="margin-bottom: 1rem; font-weight: bold;">Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="hopehaven.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+          <li><a href="about.html" style="color: #ccc; text-decoration: none;">About Us</a></li>
+          <li><a href="login.html" style="color: #ccc; text-decoration: none;">Login</a></li>
+          <li><a href="contact.html" style="color: #ccc; text-decoration: none;">Contact</a></li>
+          <li><a href="features.html" style="color: #ccc; text-decoration: none;">Features</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-contact" style="flex: 1 1 200px;">
+        <h4 style="margin-bottom: 1rem; font-weight: bold;">Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Hunger City, FC 10001</p>
+        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+        <p><i class="fas fa-envelope"></i> info@hopehaven.org</p>
+      </div>
+  
+      <!-- Newsletter -->
+      <div class="footer-newsletter" style="flex: 1 1 250px;">
+        <h4 style="margin-bottom: 1rem; font-weight: bold;">Newsletter</h4>
+        <p>Subscribe to our newsletter for updates on our impact and opportunities.</p>
+        <div style="margin-top: 1rem;">
+          <input type="email" placeholder="Your email" style="padding: 0.6rem; width: 60%; border: none; border-radius: 4px 0 0 4px;">
+          <button style="padding: 0.6rem 1rem; background: #ff6a3d; color: white; border: none; border-radius: 0 4px 4px 0;">Subscribe</button>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem; padding-top: 1rem; text-align: center; color: #ccc;">
+      © 2025 HopeHaven. All rights reserved.
+    </div>
+  </footer>
+  
+
+ 
+
+
+</body>
+</html>

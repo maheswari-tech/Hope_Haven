@@ -1,0 +1,763 @@
+{
+  "orphanages": [
+      {
+          "id": "OH001",
+          "name": "Lotus Home for Children Girls",
+          "address": {
+              "street": "826, Rohini Garden 1st St",
+              "area": "Periya Pudur",
+              "city": "Salem",
+              "state": "Tamil Nadu",
+              "postal_code": "636016",
+              "coordinates": [11.6675, 78.1436]
+          },
+          "contact": {
+              "phone": "9600416555",
+              "whatsapp": "919600416555",
+              "email": ""
+          },
+          "type": "children_girls",
+          "capacity": 50,
+          "current_needs": [
+              {
+                  "type": "food_per_person",
+                  "quantity_needed": 50,
+                  "urgency": "high"
+              },
+              {
+                  "type": "clothing",
+                  "age_group": "5-12",
+                  "quantity_needed": 25,
+                  "urgency": "medium"
+              }
+          ]
+      },
+      {
+          "id": "OH002",
+          "name": "St. Marry's Oldage Orphan Childrens Trinity Home Trust",
+          "address": {
+              "street": "210/55, 5th East Street",
+              "area": "Hasthampatti",
+              "city": "Salem",
+              "state": "Tamil Nadu",
+              "postal_code": "636007",
+              "coordinates": [11.6612, 78.1468]
+          },
+          "contact": {
+              "phone": "04272419286",
+              "whatsapp": "914272419286",
+              "email": ""
+          },
+          "type": "mixed_children_elderly",
+          "capacity": 60,
+          "current_needs": [
+              {
+                  "type": "food_per_person",
+                  "quantity_needed": 60,
+                  "urgency": "high"
+              },
+              {
+                  "type": "medical_supplies",
+                  "quantity_needed": 20,
+                  "urgency": "medium"
+              }
+          ]
+      },
+      {
+          "id": "OH003",
+          "name": "Don Bosco Anbu Illam",
+          "address": {
+              "street": "230, Brett's Road Mulluvadi Gate",
+              "area": "",
+              "city": "Salem",
+              "state": "Tamil Nadu",
+              "postal_code": "636007",
+              "coordinates": [11.6589, 78.1512]
+          },
+          "contact": {
+              "phone": "9787701098",
+              "whatsapp": "919787701098",
+              "email": ""
+          },
+          "type": "children_boys",
+          "capacity": 80,
+          "current_needs": [
+              {
+                  "type": "food_per_person",
+                  "quantity_needed": 80,
+                  "urgency": "high"
+              },
+              {
+                  "type": "clothing",
+                  "age_group": "5-12",
+                  "quantity_needed": 40,
+                  "urgency": "medium"
+              }
+          ]
+      },
+      {
+          "id": "OH004",
+          "name": "Believe Foundation",
+          "address": {
+              "street": "Kuralagam complex, TVS bus stop",
+              "area": "Omalur main road",
+              "city": "Salem",
+              "state": "Tamil Nadu",
+              "postal_code": "636007",
+              "coordinates": [11.6553, 78.1397]
+          },
+          "contact": {
+              "phone": "9600366776",
+              "whatsapp": "919600366776",
+              "email": ""
+          },
+          "type": "mixed",
+          "capacity": 45,
+          "current_needs": [
+              {
+                  "type": "food_per_person",
+                  "quantity_needed": 45,
+                  "urgency": "high"
+              },
+              {
+                  "type": "school_supplies",
+                  "quantity_needed": 30,
+                  "urgency": "high"
+              }
+          ]
+      },
+      {
+          "id": "OH005",
+          "name": "Sevagan Old Age Home",
+          "address": {
+              "street": "205F Angammal colony, 5th Cross Rd",
+              "area": "Guptha Nagar",
+              "city": "Salem",
+              "state": "Tamil Nadu",
+              "postal_code": "630009",
+              "coordinates": [11.6508, 78.1483]
+          },
+          "contact": {
+              "phone": "9944705333",
+              "whatsapp": "919944705333",
+              "email": ""
+          },
+          "type": "elderly",
+          "capacity": 40,
+          "current_needs": [
+              {
+                  "type": "food_per_person",
+                  "quantity_needed": 40,
+                  "urgency": "high"
+              },
+              {
+                  "type": "medical_supplies",
+                  "quantity_needed": 20,
+                  "urgency": "high"
+              }
+          ]
+      },
+      {
+        "id": "OH006",
+        "name": "Nambikkai Vaasal Trust",
+        "address": {
+          "street": "Itteri Rd, Subbarayan Layout",
+          "area": "Hasthampatti",
+          "city": "Salem",
+          "state": "Tamil Nadu",
+          "postal_code": "636007",
+          "coordinates": [11.6645, 78.1462]
+        },
+        "contact": {
+          "phone": "9842974697",
+          "whatsapp": "919842974697",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 40,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 40,
+            "urgency": "high"
+          },
+          {
+            "type": "clothing",
+            "age_group": "5-12",
+            "quantity_needed": 20,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH007",
+        "name": "Ramakrishna Mission Ashrama",
+        "address": {
+          "street": "17, Ramakrishna Rd",
+          "area": "Near Ramakrishna Park",
+          "city": "Salem",
+          "state": "Tamil Nadu",
+          "postal_code": "636007",
+          "coordinates": [11.6649, 78.1467]
+        },
+        "contact": {
+          "phone": "04272319457",
+          "whatsapp": "914272319457",
+          "email": "salem@rkmm.org"
+        },
+        "type": "children_boys",
+        "capacity": 60,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 60,
+            "urgency": "high"
+          },
+          {
+            "type": "school_supplies",
+            "quantity_needed": 30,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH008",
+        "name": "Nesackkarangal",
+        "address": {
+          "street": "172, Judge Rd",
+          "area": "Prakasam Nagar, Periyakollappatty, Kannankurichi",
+          "city": "Salem",
+          "state": "Tamil Nadu",
+          "postal_code": "636008",
+          "coordinates": [11.6893, 78.1692]
+        },
+        "contact": {
+          "phone": "9894069951",
+          "whatsapp": "919894069951",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 50,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 50,
+            "urgency": "high"
+          },
+          {
+            "type": "clothing",
+            "age_group": "5-12",
+            "quantity_needed": 25,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH009",
+        "name": "Open Shelter For Children",
+        "address": {
+          "street": "M4FC+P8W, Subramania Nagar",
+          "area": "Suramangalam",
+          "city": "Salem",
+          "state": "Tamil Nadu",
+          "postal_code": "636005",
+          "coordinates": [11.6603, 78.1301]
+        },
+        "contact": {
+          "phone": "04274960723",
+          "whatsapp": "914274960723",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 30,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 30,
+            "urgency": "high"
+          },
+          {
+            "type": "medical_supplies",
+            "quantity_needed": 15,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH010",
+        "name": "Indian Christian Mission Centre",
+        "address": {
+          "street": "289/47-b Yercaud Main Road",
+          "area": "Vasanthapuram",
+          "city": "Salem",
+          "state": "Tamil Nadu",
+          "postal_code": "636008",
+          "coordinates": [11.6529, 78.1576]
+        },
+        "contact": {
+          "phone": "9655998760",
+          "whatsapp": "919655998760",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 60,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 60,
+            "urgency": "high"
+          },
+          {
+            "type": "school_supplies",
+            "quantity_needed": 30,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH011",
+        "name": "Sivabakkiam Rehabilitation Centre For Disabled Person",
+        "address": {
+          "street": "2/89 Ayakkatupalayam, Manathi – POST",
+          "area": "Elanagar, Thiruchengode TK",
+          "city": "Namakkal",
+          "state": "Tamil Nadu",
+          "postal_code": "637212",
+          "coordinates": [11.3800, 77.8900]
+        },
+        "contact": {
+          "phone": "9488200300",
+          "whatsapp": "919488200300",
+          "email": "sivabakkiamrcd@yahoo.com"
+        },
+        "type": "disabled",
+        "capacity": 40,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 40,
+            "urgency": "high"
+          },
+          {
+            "type": "medical_supplies",
+            "quantity_needed": 20,
+            "urgency": "high"
+          }
+        ]
+      },
+      {
+        "id": "OH012",
+        "name": "Anbalayam Children Home",
+        "address": {
+          "street": "M39H+HRG, Kollapatty",
+          "area": "",
+          "city": "Salem",
+          "state": "Tamil Nadu",
+          "postal_code": "636030",
+          "coordinates": [11.6510, 78.0900]
+        },
+        "contact": {
+          "phone": "",
+          "whatsapp": "",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 40,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 40,
+            "urgency": "high"
+          },
+          {
+            "type": "clothing",
+            "age_group": "5-12",
+            "quantity_needed": 20,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH013",
+        "name": "House of Peace Orphanage",
+        "address": {
+          "street": "",
+          "area": "",
+          "city": "Salem",
+          "state": "Tamil Nadu",
+          "postal_code": "",
+          "coordinates": [11.6643, 78.1460]
+        },
+        "contact": {
+          "phone": "",
+          "whatsapp": "",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 200,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 200,
+            "urgency": "high"
+          },
+          {
+            "type": "school_supplies",
+            "quantity_needed": 100,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH014",
+        "name": "Karunai Illam",
+        "address": {
+          "street": "57, Pariyur Road",
+          "area": "Gobi",
+          "city": "Erode",
+          "state": "Tamil Nadu",
+          "postal_code": "638476",
+          "coordinates": [11.4550, 77.4350]
+        },
+        "contact": {
+          "phone": "9843575987",
+          "whatsapp": "919843575987",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 50,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 50,
+            "urgency": "high"
+          },
+          {
+            "type": "clothing",
+            "age_group": "5-12",
+            "quantity_needed": 25,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH015",
+        "name": "Sri Venkateswara Welfare Society",
+        "address": {
+          "street": "No 7, Saravana Nagar",
+          "area": "",
+          "city": "Erode",
+          "state": "Tamil Nadu",
+          "postal_code": "",
+          "coordinates": [11.3400, 77.7200]
+        },
+        "contact": {
+          "phone": "04242339639",
+          "whatsapp": "914242339639",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 60,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 60,
+            "urgency": "high"
+          },
+          {
+            "type": "medical_supplies",
+            "quantity_needed": 30,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH016",
+        "name": "Little Sisters of the Poor",
+        "address": {
+          "street": "Perundurai Road",
+          "area": "Thindal",
+          "city": "Erode",
+          "state": "Tamil Nadu",
+          "postal_code": "",
+          "coordinates": [11.3400, 77.7000]
+        },
+        "contact": {
+          "phone": "",
+          "whatsapp": "",
+          "email": ""
+        },
+        "type": "elderly",
+        "capacity": 132,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 132,
+            "urgency": "high"
+          },
+          {
+            "type": "medical_supplies",
+            "quantity_needed": 66,
+            "urgency": "high"
+          }
+        ]
+      },
+      {
+        "id": "OH017",
+        "name": "Anbu Illam",
+        "address": {
+          "street": "",
+          "area": "Solar",
+          "city": "Erode",
+          "state": "Tamil Nadu",
+          "postal_code": "",
+          "coordinates": [11.3400, 77.7200]
+        },
+        "contact": {
+          "phone": "",
+          "whatsapp": "",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 50,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 50,
+            "urgency": "high"
+          },
+          {
+            "type": "clothing",
+            "age_group": "5-12",
+            "quantity_needed": 25,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH018",
+        "name": "Safe India Orphanage",
+        "address": {
+          "street": "",
+          "area": "Villivakkam",
+          "city": "Chennai",
+          "state": "Tamil Nadu",
+          "postal_code": "600049",
+          "coordinates": [13.1100, 80.2000]
+        },
+        "contact": {
+          "phone": "",
+          "whatsapp": "",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 80,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 80,
+            "urgency": "high"
+          },
+          {
+            "type": "school_supplies",
+            "quantity_needed": 40,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH019",
+        "name": "Families For Children",
+        "address": {
+          "street": "Shop No.107, Vellalore Road, Podanur",
+          "area": "Near GD Water Tank Bus Stop",
+          "city": "Coimbatore",
+          "state": "Tamil Nadu",
+          "postal_code": "641023",
+          "coordinates": [10.9601, 76.9745]
+        },
+        "contact": {
+          "phone": "04222413235",
+          "whatsapp": "914222413235",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 60,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 60,
+            "urgency": "high"
+          },
+          {
+            "type": "school_supplies",
+            "quantity_needed": 30,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH020",
+        "name": "Aravanaikkum Anbu Illam",
+        "address": {
+          "street": "Gowthampuri Layout",
+          "area": "Peelamedu",
+          "city": "Coimbatore",
+          "state": "Tamil Nadu",
+          "postal_code": "641004",
+          "coordinates": [11.0290, 77.0120]
+        },
+        "contact": {
+          "phone": "9751883882",
+          "whatsapp": "919751883882",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 50,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 50,
+            "urgency": "high"
+          },
+          {
+            "type": "clothing",
+            "age_group": "5-12",
+            "quantity_needed": 25,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH021",
+        "name": "Anbagam Home for Children",
+        "address": {
+          "street": "1-383, 3rd St, Saravanampatti",
+          "area": "",
+          "city": "Coimbatore",
+          "state": "Tamil Nadu",
+          "postal_code": "641035",
+          "coordinates": [11.0800, 77.0000]
+        },
+        "contact": {
+          "phone": "8056493892",
+          "whatsapp": "918056493892",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 45,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 45,
+            "urgency": "high"
+          },
+          {
+            "type": "school_supplies",
+            "quantity_needed": 20,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH022",
+        "name": "Ducklings Orphanage",
+        "address": {
+          "street": "Teachers Colony, Thudiyalur",
+          "area": "",
+          "city": "Coimbatore",
+          "state": "Tamil Nadu",
+          "postal_code": "641022",
+          "coordinates": [11.0700, 76.9500]
+        },
+        "contact": {
+          "phone": "9843810773",
+          "whatsapp": "919843810773",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 40,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 40,
+            "urgency": "high"
+          },
+          {
+            "type": "clothing",
+            "age_group": "5-12",
+            "quantity_needed": 20,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH023",
+        "name": "Nizhal Charitable Trust",
+        "address": {
+          "street": "No.5-1, Sri Sabari Garden, TVS Nagar - Koundampalayam Rd",
+          "area": "Saravana Nagar, Koundampalayam",
+          "city": "Coimbatore",
+          "state": "Tamil Nadu",
+          "postal_code": "641025",
+          "coordinates": [11.0500, 76.9500]
+        },
+        "contact": {
+          "phone": "9842430307",
+          "whatsapp": "919842430307",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 50,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 50,
+            "urgency": "high"
+          },
+          {
+            "type": "school_supplies",
+            "quantity_needed": 25,
+            "urgency": "medium"
+          }
+        ]
+      },
+      {
+        "id": "OH024",
+        "name": "Mahatma Karunai Illam",
+        "address": {
+          "street": "Amaravathipalayam, Near Bus Stand, Dharapuram Road",
+          "area": "Tirupur North",
+          "city": "Tiruppur",
+          "state": "Tamil Nadu",
+          "postal_code": "641602",
+          "coordinates": [10.8800, 77.2700]
+        },
+        "contact": {
+          "phone": "9952705871",
+          "whatsapp": "919952705871",
+          "email": ""
+        },
+        "type": "children_mixed",
+        "capacity": 60,
+        "current_needs": [
+          {
+            "type": "food_per_person",
+            "quantity_needed": 60,
+            "urgency": "high"
+          },
+          {
+            "type": "school_supplies",
+            "quantity_needed": 30,
+            "urgency": "medium"
+          }
+        ]
+      }  
+  ],
+  "metadata": {
+      "last_updated": "2023-11-20",
+      "data_source": "HopeLink Salem Survey",
+      "total_orphanages": 5,
+      "version": "1.1"
+  }
+}

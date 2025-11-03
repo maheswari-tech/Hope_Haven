@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Where your food come from</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .search-bar {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    .donation-section {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      padding: 60px 20px;
+      color: white;
+    }
+
+    .donation-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .source-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .source-box {
+      background: white;
+      color: black;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 260px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .source-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .source-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .source-text {
+      padding: 20px;
+    }
+
+    .source-text h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">HOPE HAVEN</div>
+        <nav>
+          <a href="hopehaven.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="login.html">LOGIN</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="features.html">FEATURES</a>
+        </nav>
+      </header>
+  <section class="donation-section">
+    <div class="donation-wrapper">
+      <h2>Where Your Food Can Come From</h2>
+      <p>We accept food donations from various sources to ensure no excess food goes to waste.</p>
+      
+      <div class="source-grid">
+        <div class="source-box">
+          <img src="food1.png" alt="Weddings & Events" />
+          <div class="source-text">
+            <h3>Weddings & Events</h3>
+            <p>Donate surplus food from your special occasions and celebrations.</p>
+          </div>
+        </div>
+        <div class="source-box">
+          <img src="food2.png" alt="Restaurants & Hotels" />
+          <div class="source-text">
+            <h3>Restaurants & Hotels</h3>
+            <p>Partner with us to donate unused prepared meals and ingredients.</p>
+          </div>
+        </div>
+        <div class="source-box">
+          <img src="food3.png" alt="Corporate Cafeterias" />
+          <div class="source-text">
+            <h3>Corporate Cafeterias</h3>
+            <p>Turn your office's excess catering and daily meals into donations.</p>
+          </div>
+        </div>
+        <div class="source-box">
+          <img src="food4.png" alt="Home Kitchens" />
+          <div class="source-text">
+            <h3>Home Kitchens</h3>
+            <p>Share your homemade meals and grocery extras with those in need.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

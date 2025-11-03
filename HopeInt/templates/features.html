@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orphanage Platform Features</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 1px;
+    }
+    nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff6f5e;
+  color: white;
+  border-radius: 5px;
+}
+
+nav a.active {
+  background-color: #ff6f5e;
+  color: white;
+  border-radius: 5px;
+}
+
+
+    .container {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #ffcc00; /* Changed font color for h1 */
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .card h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #0f2027; /* Updated topic color inside cards */
+    }
+
+    .card p {
+      color: #555;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">HOPE HAVEN</div>
+    <nav>
+      <a href="hopehaven.html"class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="login.html">LOGIN</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="features.html">FEATURES</a>
+    </nav>
+  </header>
+  <<script>
+    const currentPath = window.location.pathname.split("/").pop() || "hopehaven.html";
+    const navLinks = document.querySelectorAll("nav a");
+  
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href");
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  </script>
+  
+  
+  
+  <div class="container">
+    <h1>Platform Features</h1>
+    <div class="features">
+      <div class="card">
+        <h2>AI-powered Orphanage Mapping</h2>
+        <p>Find nearby orphanages based on food availability and number of residents.</p>
+      </div>
+      <div class="card">
+        <h2>Separate Logins</h2>
+        <p>Access for donors, orphanages, volunteers, NGOs, and street beggars.</p>
+      </div>
+      <div class="card">
+        <h2>Gamification</h2>
+        <p>Get a thank-you and gamified badge from the orphanage via email.</p>
+      </div>
+      <div class="card">
+        <h2>Dynamic Routing</h2>
+        <p>Optimized delivery routes to minimize CO₂ emissions.</p>
+      </div>
+      <div class="card">
+        <h2>SDG Contributions</h2>
+        <p>Aligned with Zero Hunger and Climate Action goals by saving food and reducing emissions.</p>
+      </div>
+      <div class="card">
+        <h2>Partnership Goals</h2>
+        <p>Build links with NGOs and enable food delivery to homeless individuals.</p>
+      </div>
+      <div class="card">
+        <h2>Smart Chatbot</h2>
+        <p>Maps orphanages smartly based on location and demand.</p>
+      </div>
+      <div class="card">
+        <h2>Impact Tracker</h2>
+        <p>Monitor your contributions and the platform’s overall impact.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
